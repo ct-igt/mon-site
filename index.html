@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mon site à moi</title>
+
+    <style>
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial;
+            text-align: center;
+        }
+
+        .carte {
+            background-color: white;
+            width: 300px;
+            margin: 50px auto;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 10px gray;
+        }
+
+        .carte img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto 15px auto;
+        }
+
+        h1 {
+            margin: 10px 0;
+        }
+
+        p {
+            color: #666;
+        }
+
+        button {
+            padding: 10px;
+            background-color: blue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head><head>
+    <meta charset="UTF-8">
+    <title>Mon site à moi</title>
+
+<body>
+
+    <div class="carte">
+
+        <img src="photo.jpg">
+
+        <h1 id="titre">Jean Bandu</h1>
+        <p id="texte">Débutant en développement web</p>
+
+        <button onclick="changerTexte()">Clique ici</button>
+
+    </div>
+
+    <script>
+        function changerTexte() {
+            document.getElementById("texte").innerHTML = "Bienvenue sur mon profil 🚀";
+        }
+    </script>
+
+</body>
+</html>
+
